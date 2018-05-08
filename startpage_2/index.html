@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu|Open+Sans" rel="stylesheet"> 
+</head>
+<body>
+<div class="c">
+  <a href="#" onclick="darkMode()"><i class="fab fa-google g"></i></a>
+  <form  class="search" action="http://google.com/search?" method="get">
+    <input class="search" type="text" value="" name="q" placeholder="Google Search" autocomplete="off" autofocus>
+
+  </form>
+</div>
+
+
+
+</body>
+</html>
+
+
+<script>
+
+  
+
+  function darkMode() {
+    var pref = document.body.classList;
+    var input = document.querySelector("input").classList;
+    var logo =  document.querySelector("i").classList;
+
+    if (!(pref.contains("dark"))) {
+      pref.add("dark");
+      input.add("dark");
+      logo.add("dark");
+
+    } else {
+      pref.remove("dark");
+      input.remove("dark");
+      logo.remove("dark");
+      
+    }
+}
+  
+
+</script>
