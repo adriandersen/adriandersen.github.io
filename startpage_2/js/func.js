@@ -1,9 +1,6 @@
-function setEngine(obj) {
-    document.getElementById("buttons").innerHTML = null;
-    for(i=0; i<obj.links.length ; i++){
-        document.getElementById("buttons").innerHTML += '<button class="btn">' + obj.links[i].name + '</button>';
-    }
-  }
+
+
+
   
   var currEng = Google;
 
@@ -11,31 +8,42 @@ function setEngine(obj) {
   var input = document.querySelector("input");
   var form = document.querySelector("form");
   
-  var type = window.location.hash.substr(1);
-  
-  function getUrl(){
+  function setEngine(obj) {
+    currEng = obj;
+    document.getElementById("buttons").innerHTML = null;
+    for(i=0; i<obj.links.length ; i++){
+        document.getElementById("buttons").innerHTML += '<button class="btn">' + obj.links[i].name + '</button>';
+    }
+  }
+
+
+  function getHash(){
     hash = window.location.hash;
     
-    lookup{
-    	'google': Google,
-	'reddit': Reddit,
-	'facebook': Facebook,
+    lookup = {    //Lookup chart of all search engines
+    	'#google': Google,
+	    '#reddit': Reddit,
+      '#facebook': Facebook,
+      '#youtube': Youtube,
+      
     
     }
 
-    
-    alert(hash + "  " + lookup[hash]);
     return lookup[hash];
   
   }
   function setEngineToUrl(){
     if(window.location.hash){
+    var tempObj = getHash();
+
     logo.remove("fa-google");
-    logo.add("fa-" + type);
-    
-    var name = type.charAt(0).toUpperCase() + type.slice(1);
-    input.placeholder = name + " Search";   //Capitalize Word
-    setEngine();
+    logo.add(tempObj.icon);
+
+    input.placeholder = tempObj.ph;   //Capitalize Word
+    setEngine(tempObj);
+
+    }else{
+      //Set engine to Google
     }
   }
   function howTo() {
