@@ -1,7 +1,17 @@
+:root{
+    --w-color  : #fff;
+    --nw-color : #f6f6f6;
+    --dw-color : #eee;
+    --lg-color : #aaa;
+    --mg-color : #555;
+    --dg-color : #333;
+    --c1-color : rgb(233, 126, 126);
+}
+
 
 body {
     
-    background-color: #f6f6f6;
+    background-color: var(--nw-color);
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
@@ -9,7 +19,7 @@ body {
     
 }
 body.dark{
-    background-color: #555;
+    background-color: var(--mg-color);
 }
 h1{
     font-family: 'Ubuntu', sans-serif;
@@ -30,7 +40,7 @@ h1{
     
 }
 i.g{
-    color: #333;
+    color: var(--dg-color);
     margin-bottom: 60px;
     font-size: 120px; 
 }
@@ -39,7 +49,7 @@ i.dark{
     -webkit-transform: scaleY(-1);
     transform: rotate(180deg);
     transform: scaleY(-1);
-    color: #ffffff;
+    color: var(--nw-color);
 }
 /*
 i:hover{
@@ -51,15 +61,17 @@ i:hover{
 */
 
 button.btn{
-    background-color: #aaa;
-    border-style: none;
+    background-color: var(--lg-color);
+    border-color: var(--c1-color);
+    border-width: 0px 0px 0px 3px;
+    border-style: solid;
     margin-right: 0px;
     margin-left: 10px;
     margin-bottom: 10px;
     padding: 5px;
 }
 button.dark{
-    background-color: #333;
+    background-color: var(--dg-color);
     border-style: none;
     padding: 5px;
 }
@@ -67,7 +79,8 @@ div.bottom{
     position: fixed;
     bottom:0;
 }
-#buttons{
+div#buttons{
+
     width: 300px;
     display: block;
     margin-left: auto;
@@ -89,7 +102,7 @@ input.search{
     border-width: 5px;
     
     border-color: #eee;
-    background-color: #fff;
+    background-color: var(--w-color);
     margin-bottom: 5%;
     
 }
@@ -107,10 +120,10 @@ input.dark{
     border-color: #666;
 }
 input.dark::-webkit-input-placeholder{
-    color: rgb(53, 53, 53);
+    color: var(--dg-color);
 }
 input.search:hover{
-    background-color: #fefefe;
+    background-color: var(--nw-color);
 }
 input.dark:hover{
     background-color: #7a7a7a;
@@ -122,10 +135,10 @@ input.dark:hover{
     margin: 5px;
     padding: 8px;
     border-bottom-width: 2px;
-    background-color: #fff;
+    background-color: var(--nw-color);
 }
 .btn-group button:hover{
 
-    background-color: #fafafa;
+    background-color: var(--nw-color);
 }
 
