@@ -3,17 +3,29 @@
 
   
   var currEng = Google;
-
   var logo =  document.querySelector("i").classList;
   var input = document.querySelector("input");
   var form = document.querySelector("form");
   
   function setEngine(obj) {
+    oldEng = currEng;
     currEng = obj;
     document.getElementById("buttons").innerHTML = null;
     for(i=0; i<obj.links.length ; i++){
         document.getElementById("buttons").innerHTML += '<button class="btn">' + obj.links[i].name + '</button>';
     }
+    
+    form.action = currEng.url;
+    input.placeholder = currEng.ph;  
+    window.location.hash = "#" + currEng.name;
+    input.name = currEng.query;
+    form.method = "";
+
+    logo.remove(oldEng.icon);
+    logo.add(currEng.icon);
+    
+    console.log("Obj set from " + oldEng.name + " to " + currEng.name + ", " + i + "/" + currEng.links.length + " buttons added.");
+    
   }
 
 
@@ -63,15 +75,8 @@
   function searchEngine() {
 
     if(logo.contains("fa-google")){
-      setEngine(currEng = Reddit);
-      logo.remove("fa-google");
-      logo.add("fa-reddit");
-      
-      form.action = "https://reddit.com/r/" + input.value;
-      input.placeholder = "Reddit Search";  
-      window.location.hash = "#reddit";
-      input.name = "";
-      form.method = "";
+      setEngine(Reddit);
+   
 
 /*
     }else if (logo.contains("fa-reddit")){
@@ -114,15 +119,7 @@
 
     }else if (logo.contains("fa-reddit")){
       
-      setEngine(currEng = Google);
-      logo.remove("fa-reddit");
-      logo.add("fa-google");
-
-      form.action = "https://google.com/search?";
-      input.placeholder = "Google Search";
-      window.location.hash = "#google";
-      input.name = "q";
-
+      setEngine(Google);
 
     }
     

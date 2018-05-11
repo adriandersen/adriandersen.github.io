@@ -6,7 +6,8 @@ var Google = {
     icon:"fa-google",
     url:"https://google.com/search?",
     query:"q",
-    ph:"Google Search"
+    ph:"Google Search",
+    name:"google"
 };
 
 var Reddit = {
@@ -19,7 +20,8 @@ var Reddit = {
     icon:"fa-reddit",
     url:"https://reddit.com/search?",
     query:"q",
-    ph:"Reddit Search"
+    ph:"Reddit Search",
+    name:"reddit"
 };
 
 var Youtube = {
@@ -29,7 +31,8 @@ var Youtube = {
     icon:"fa-youtube",
     url:"https://reddit.com/search?",
     query:"q",
-    ph:"Youtube Search"
+    ph:"Youtube Search",
+    name:"youtube"
 };
 
 var Facebook = {
@@ -40,5 +43,6 @@ var Facebook = {
     icon:"fa-reddit",
     url:"https://facebook.com/search?",
     query:"q",
-    ph:"Facebook Search"
+    ph:"Facebook Search",
+    name:"facebook"
 };
