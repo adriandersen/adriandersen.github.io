@@ -1,7 +1,7 @@
 function setEngine(obj) {
     document.getElementById("buttons").innerHTML = null;
     for(i=0; i<obj.links.length ; i++){
-        document.getElementById("buttons").innerHTML += "<button>" + obj.links[i].name + "</button>";
+        document.getElementById("buttons").innerHTML += '<button class="btn">' + obj.links[i].name + '</button>';
     }
   }
   
@@ -13,6 +13,21 @@ function setEngine(obj) {
   
   var type = window.location.hash.substr(1);
   
+  function getUrl(){
+    hash = window.location.hash;
+    
+    lookup{
+    	'google': Google,
+	'reddit': Reddit,
+	'facebook': Facebook,
+    
+    }
+
+    
+    alert(hash + "  " + lookup[hash]);
+    return lookup[hash];
+  
+  }
   function setEngineToUrl(){
     if(window.location.hash){
     logo.remove("fa-google");
@@ -121,5 +136,5 @@ function setEngine(obj) {
     }
   }
 
-
+  setEngineToUrl();
 //document.getElementById("wp").style.backgroundImage = "url('wp" + Math.floor(Math.random() * 6 + 1) +".jpg')"
