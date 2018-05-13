@@ -18,7 +18,7 @@ var Reddit = {
 
     ],
     icon:"fa-reddit",
-    url:"https://reddit.com/search?",
+    url:"https://reddit.com/r/",
     query:"q",
     ph:"Reddit Search",
     name:"reddit"

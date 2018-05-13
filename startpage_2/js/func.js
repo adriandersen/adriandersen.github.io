@@ -16,6 +16,7 @@
     }
     
     form.action = currEng.url;
+    console.log(form.action);
     input.placeholder = currEng.ph;  
     window.location.hash = "#" + currEng.name;
     input.name = currEng.query;
@@ -95,6 +96,7 @@
       btns.remove("dark");
     }
   }
+
 
   setEngineToUrl();
 //document.getElementById("wp").style.backgroundImage = "url('wp" + Math.floor(Math.random() * 6 + 1) +".jpg')"
