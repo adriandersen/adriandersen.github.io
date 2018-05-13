@@ -1,8 +1,8 @@
 
 
 
-  
-  var currEng = Google;
+  var defaultEng = Google;
+  var currEng = defaultEng;
   var logo =  document.querySelector("i").classList;
   var input = document.querySelector("input");
   var form = document.querySelector("form");
@@ -24,7 +24,7 @@
     logo.remove(oldEng.icon);
     logo.add(currEng.icon);
     
-    console.log("Obj set from " + oldEng.name + " to " + currEng.name + ", " + i + "/" + currEng.links.length + " buttons added.");
+    console.log("Obj set from " + oldEng.name + " to " + currEng.name + ", " + i + " buttons added from " + currEng.links.length + " links.");
     
   }
 
@@ -48,14 +48,10 @@
     if(window.location.hash){
     var tempObj = getHash();
 
-    logo.remove("fa-google");
-    logo.add(tempObj.icon);
-
-    input.placeholder = tempObj.ph;   //Capitalize Word
     setEngine(tempObj);
 
     }else{
-      //Set engine to Google
+      setEngine(defaultEng);
     }
   }
   function howTo() {
@@ -72,72 +68,31 @@
       helpText.style.visibility = "visible";
     }
   }
-  function searchEngine() {
+  function nextSearchEngine() {
 
-    if(logo.contains("fa-google")){
+    if(currEng == Google){
       setEngine(Reddit);
-   
-
-/*
-    }else if (logo.contains("fa-reddit")){
-
-      logo.remove("fa-reddit");
-      logo.add("fa-facebook");
-
-      form.action = "https://facebook.com/search?";
-      input.placeholder = "Facebook Search";
-      window.location.hash = "#facebook";
-      input.name = "q";
-
-
-    }else if (logo.contains("fa-facebook")){
-
-      logo.remove("fa-facebook");
-      logo.add("fa-stack-overflow");
-
-      form.action = "https://stackoverflow.com/search?";
-      input.placeholder = "Stack Overflow Search";
-      window.location.hash = "#stack-overflow";
-      input.name = "q";
-
-
-    }else if (logo.contains("fa-stack-overflow")){
-
-      logo.remove("fa-stack-overflow");
-      logo.add("fa-youtube");
-
-      form.action = "https://www.youtube.com/results?";
-      input.placeholder = "Youtube Search";
-      window.location.hash = "#youtube";
-      input.name = "search_query";
-
-
-    }else if (logo.contains("fa-youtube")){
-
-      logo.remove("fa-youtube");
-      */
-
-    }else if (logo.contains("fa-reddit")){
-      
+    }else if(currEng == Reddit){
       setEngine(Google);
 
     }
-    
   }
 
   function darkMode() {
     var pref = document.body.classList;
     var input = document.querySelector("input").classList;
     var logo =  document.querySelector("i").classList;
-
+    var btns = document.getElementById("buttons").classList;
     if (!(pref.contains("dark"))) {
       pref.add("dark");
       input.add("dark");
       logo.add("dark");
+      btns.add("dark");
     } else {
       pref.remove("dark");
       input.remove("dark");
       logo.remove("dark");
+      btns.remove("dark");
     }
   }
 
