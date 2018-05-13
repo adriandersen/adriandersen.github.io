@@ -2,7 +2,7 @@
     --w-color  : #fff;
     --nw-color : #f6f6f6;
     --dw-color : #eee;
-    --lg-color : #aaa;
+    --lg-color : #777;
     --mg-color : #555;
     --dg-color : #333;
     --c1-color : rgb(233, 126, 126);
@@ -70,6 +70,7 @@ button.btn{
     margin-bottom: 10px;
     padding: 5px;
 }
+
 button.dark{
     background-color: var(--dg-color);
     border-style: none;
