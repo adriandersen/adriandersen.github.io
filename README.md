@@ -6,7 +6,7 @@ Just a personal startpage, might make it easier for others to customize later, b
 ## TODO:
 
 **Will do**
-- [ ] Set search-engine to url-hash, or default if not defined
+- [X] Set search-engine to url-hash, or default if not defined
 - [X] Make one onject per search-engine, to hopefully simplify code and make it easier to add things later
 - [ ] Update this readme-file
 - [ ] Clean up CSS-file with variables and stuff
