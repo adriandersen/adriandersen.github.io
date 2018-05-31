@@ -60,7 +60,10 @@ i:hover{
 }
 */
 
-button.btn{
+a.btn{
+    font-family: 'Ubuntu';
+    color: #000;
+    text-decoration: none;
     background-color: var(--lg-color);
     border-color: var(--c1-color);
     border-width: 0px 0px 0px 3px;
@@ -71,7 +74,7 @@ button.btn{
     padding: 5px;
 }
 
-button.dark{
+a.dark{
     background-color: var(--dg-color);
     border-style: none;
     padding: 5px;

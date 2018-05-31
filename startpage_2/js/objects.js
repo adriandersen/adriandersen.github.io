@@ -4,24 +4,26 @@ var Google = {
       link2 = {name:"Maps",url:"https://www.google.no/maps"},  
     ],
     icon:"fa-google",
-    url:"https://google.com/search?",
-    query:"q",
+    url:"https://google.com/search",
+    query:"?q=",
     ph:"Google Search",
-    name:"google"
+    name:"google",
+    method:"post"
 };
 
 var Reddit = {
     links: [ 
-        link1 = {name:"MK",url:"https://www.google.com/drive/"}, 
-        link2 = {name:"Norge",url:"https://www.google.no/maps"},  
-        link3 = {name:"Frontpage",url:"https://reddit.com/"}, 
+        link1 = {name:"MK",url:"https://reddit.com/r/mechanicalkeyboards"}, 
+        link2 = {name:"Norge",url:"https://reddit.com/r/norge"},  
+        link3 = {name:"Frontpage",url:"https://reddit.com"}, 
 
     ],
     icon:"fa-reddit",
     url:"https://reddit.com/r/",
-    query:"q",
-    ph:"Reddit Search",
-    name:"reddit"
+    query:"",
+    ph:"r/",
+    name:"reddit",
+    method:"post"
 };
 
 var Youtube = {
@@ -32,7 +34,8 @@ var Youtube = {
     url:"https://reddit.com/search?",
     query:"q",
     ph:"Youtube Search",
-    name:"youtube"
+    name:"youtube",
+    method:"post"
 };
 
 var Facebook = {
@@ -44,5 +47,6 @@ var Facebook = {
     url:"https://facebook.com/search?",
     query:"q",
     ph:"Facebook Search",
-    name:"facebook"
+    name:"facebook",
+    method:"post"
 };

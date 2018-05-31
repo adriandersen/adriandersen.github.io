@@ -12,25 +12,32 @@
     currEng = obj;
     document.getElementById("buttons").innerHTML = null;
     for(i=0; i<obj.links.length ; i++){
-        document.getElementById("buttons").innerHTML += '<button class="btn">' + obj.links[i].name + '</button>';
+        document.getElementById("buttons").innerHTML += '<a class="btn" href="' + currEng.links[i].url + '">' + obj.links[i].name + '</a>';
     }
     
-    form.action = currEng.url;
+    //form.action = currEng.url;
     console.log(form.action);
     input.placeholder = currEng.ph;  
     window.location.hash = "#" + currEng.name;
     input.name = currEng.query;
-    form.method = "";
-
+    form.method = currEng.method;
+    
     logo.remove(oldEng.icon);
     logo.add(currEng.icon);
-    
+    //DEBUG
     console.log("Obj set from " + oldEng.name + " to " + currEng.name + ", " + i + " buttons added from " + currEng.links.length + " links.");
-    
+    //DEBUG
   }
-
-
+  
+  function doSearch(){
+    window.location.replace(currEng.url+currEng.query+input.value);
+    return false;
+  }
   function getHash(){
+
+
+    
+
     hash = window.location.hash;
     
     lookup = {    //Lookup chart of all search engines
@@ -43,6 +50,9 @@
     }
 
     return lookup[hash];
+    //DEBUG
+    console.log("Hash: " + hash.name);
+    //DEBUG
   
   }
   function setEngineToUrl(){
@@ -50,11 +60,19 @@
     var tempObj = getHash();
 
     setEngine(tempObj);
+    //DEBUG
+    console.log("ENGINE SET: " + tempObj.name);
+    //DEBUG
 
     }else{
       setEngine(defaultEng);
     }
+      
+  
   }
+
+
+
   function howTo() {
     if(logo.contains("blur")){
       logo.remove("blur");
