@@ -1,12 +1,12 @@
 
-
-
   var defaultEng = Google;
   var currEng = defaultEng;
   var logo =  document.querySelector("i").classList;
   var input = document.querySelector("input");
   var form = document.querySelector("form");
   
+
+  //Changes all required things when changing search-engine
   function setEngine(obj) {
     oldEng = currEng;
     currEng = obj;
@@ -25,14 +25,17 @@
     logo.remove(oldEng.icon);
     logo.add(currEng.icon);
     //DEBUG
-    console.log("Obj set from " + oldEng.name + " to " + currEng.name + ", " + i + " buttons added from " + currEng.links.length + " links.");
+    console.log("OBJ SET: " + oldEng.name + " -> " + currEng.name + " ~~ " + i + "/" + currEng.links.length + " buttons added.");
     //DEBUG
   }
   
+  //Runs when form is submitted
   function doSearch(){
-    window.location.replace(currEng.url+currEng.query+input.value);
+    window.location = (currEng.url+currEng.query+input.value);
     return false;
   }
+
+  //Returns the Hash in the URL
   function getHash(){
 
 
@@ -50,16 +53,20 @@
     }
 
     return lookup[hash];
+
     //DEBUG
-    console.log("Hash: " + hash.name);
+    console.log("HASH: " + hash.name);
     //DEBUG
   
   }
+
+  //Uses getHash to change the engine
   function setEngineToUrl(){
     if(window.location.hash){
     var tempObj = getHash();
 
     setEngine(tempObj);
+
     //DEBUG
     console.log("ENGINE SET: " + tempObj.name);
     //DEBUG
@@ -71,8 +78,7 @@
   
   }
 
-
-
+  //Button-function
   function howTo() {
     if(logo.contains("blur")){
       logo.remove("blur");
@@ -87,16 +93,23 @@
       helpText.style.visibility = "visible";
     }
   }
+
+  //Button-function
   function nextSearchEngine() {
+    // THIS HAS TO BE CLEANED UP
+    // WHAT A HORRIBLE WAY TO DO THIS
 
     if(currEng == Google){
       setEngine(Reddit);
     }else if(currEng == Reddit){
+      setEngine(Youtube);
+    }else if(currEng == Youtube){
       setEngine(Google);
 
     }
   }
 
+  //Button-function
   function darkMode() {
     var pref = document.body.classList;
     var input = document.querySelector("input").classList;
@@ -117,4 +130,4 @@
 
 
   setEngineToUrl();
-//document.getElementById("wp").style.backgroundImage = "url('wp" + Math.floor(Math.random() * 6 + 1) +".jpg')"
+

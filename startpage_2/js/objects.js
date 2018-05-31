@@ -28,11 +28,11 @@ var Reddit = {
 
 var Youtube = {
     links: [ 
-        link1 = {name:"Subscriptions",url:"https://www.google.com/drive/"}, 
+        link1 = {name:"Subscriptions",url:"https://www.youtube.com/feed/subscriptions"}, 
     ],
     icon:"fa-youtube",
-    url:"https://reddit.com/search?",
-    query:"q",
+    url:"https://www.youtube.com/results",
+    query:"?search_query=",
     ph:"Youtube Search",
     name:"youtube",
     method:"post"
