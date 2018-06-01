@@ -44,11 +44,14 @@ i.g{
     margin-bottom: 60px;
     font-size: 120px; 
 }
+
 i.dark{
+    /*
     -webkit-transform: rotate(180deg);
     -webkit-transform: scaleY(-1);
     transform: rotate(180deg);
     transform: scaleY(-1);
+    */
     color: var(--nw-color);
 }
 /*
