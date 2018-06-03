@@ -11,8 +11,11 @@
     oldEng = currEng;
     currEng = obj;
     document.getElementById("buttons").innerHTML = null;
-    for(i=0; i<obj.links.length ; i++){
-        document.getElementById("buttons").innerHTML += '<a class="btn" href="' + currEng.links[i].url + '">' + obj.links[i].name + '</a>';
+    for(i=0; i<currEng.links.length ; i++){
+        document.getElementById("buttons").innerHTML += '<a class="btn" href="' + currEng.links[i].url + '">' + obj.links[i].name + '</a>\n';
+        if(!(i%5) && i!=0){
+          //document.getElementById("buttons").innerHTML += '<br><br><br>';
+        }
     }
     
     //form.action = currEng.url;
@@ -108,24 +111,41 @@
 
     }
   }
+	function darkMode(mode) {
 
-  //Button-function
-  function darkMode() {
+
     var pref = document.body.classList;
     var input = document.querySelector("input").classList;
     var logo =  document.querySelector("i").classList;
     var btns = document.getElementById("buttons").classList;
-    if (!(pref.contains("dark"))) {
+    
+	  
+    if(mode) {
+
       pref.add("dark");
       input.add("dark");
       logo.add("dark");
       btns.add("dark");
     } else {
+
       pref.remove("dark");
       input.remove("dark");
       logo.remove("dark");
       btns.remove("dark");
     }
+
+
+  }
+
+  //Button-function
+  function toggleDarkMode() {
+    if (!(document.body.classList.contains("dark"))) {
+      darkMode(true);
+    }else{
+      darkMode(false);
+    }
+
+    
   }
 
 

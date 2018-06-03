@@ -16,6 +16,12 @@ var Reddit = {
         link1 = {name:"MK",url:"https://reddit.com/r/mechanicalkeyboards"}, 
         link2 = {name:"Norge",url:"https://reddit.com/r/norge"},  
         link3 = {name:"Frontpage",url:"https://reddit.com"}, 
+        link4 = {name:"Startpages",url:"https://www.reddit.com/r/startpages"},
+        link4 = {name:"Unixporn",url:"https://www.reddit.com/r/unixporn"},  
+
+        
+
+
 
     ],
     icon:"fa-reddit",
