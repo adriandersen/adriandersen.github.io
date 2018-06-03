@@ -123,15 +123,11 @@
     if(mode) {
 
       pref.add("dark");
-      input.add("dark");
-      logo.add("dark");
-      btns.add("dark");
+
     } else {
 
       pref.remove("dark");
-      input.remove("dark");
-      logo.remove("dark");
-      btns.remove("dark");
+
     }
 
 
