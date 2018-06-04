@@ -8,7 +8,8 @@ var Google = {
     query:"?q=",
     ph:"Google Search",
     name:"google",
-    method:"post"
+    method:"post",
+    color:"#555" //Not used yet
 };
 
 var Reddit = {
@@ -29,7 +30,8 @@ var Reddit = {
     query:"",
     ph:"r/",
     name:"reddit",
-    method:"post"
+    method:"post",
+    color:"#555" //Not used yet
 };
 
 var Youtube = {
@@ -41,7 +43,22 @@ var Youtube = {
     query:"?search_query=",
     ph:"Youtube Search",
     name:"youtube",
-    method:"post"
+    method:"post",
+    color:"#555" //Not used yet
+};
+
+var Twitch = {
+    links: [ 
+        link1 = {name:"Frontpage",url:"https://www.twitch.tv/"}, 
+        link2 = {name:"Following",url:"https://www.twitch.tv/directory/following"}, 
+    ],
+    icon:"fa-twitch",
+    url:"https://www.twitch.tv/",
+    query:"",
+    ph:"Channel",
+    name:"twitch",
+    method:"post",
+    color:"#555" //Not used yet
 };
 
 var Facebook = {
@@ -54,5 +71,6 @@ var Facebook = {
     query:"q",
     ph:"Facebook Search",
     name:"facebook",
-    method:"post"
+    method:"post",
+    color:"#555" //Not used yet
 };
