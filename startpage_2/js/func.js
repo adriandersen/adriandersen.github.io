@@ -21,7 +21,7 @@
     //form.action = currEng.url;
     console.log(form.action);
     input.placeholder = currEng.ph;  
-    window.location.hash = "#" + currEng.name;
+    window.location.replace = "?engine=" + currEng.name;
     input.name = currEng.query;
     form.method = currEng.method;
     
@@ -38,36 +38,16 @@
     return false;
   }
 
-  //Returns the Hash in the URL
-  function getHash(){
 
-
+  function initialize(){
+    if(getQueryVariable("engine")){
+    var tempObj = lookupEngine();
     
-
-    hash = window.location.hash;
-    
-    lookup = {    //Lookup chart of all search engines
-    	'#google': Google,
-	    '#reddit': Reddit,
-      '#facebook': Facebook,
-      '#youtube': Youtube,
-      
-    
+    if(getQueryVariable("darkmode")){
+      darkMode(true);
+    }else{
+      darkMode(false);
     }
-
-    return lookup[hash];
-
-    //DEBUG
-    console.log("HASH: " + hash.name);
-    //DEBUG
-  
-  }
-
-  //Uses getHash to change the engine
-  function setEngineToUrl(){
-    if(window.location.hash){
-    var tempObj = getHash();
-
     setEngine(tempObj);
 
     //DEBUG
@@ -144,6 +124,42 @@
     
   }
 
+  function getQueryVariable(variable)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
 
-  setEngineToUrl();
+       
+}
+console.log(getQueryVariable("engine"));
+console.log(getQueryVariable("darkmode"));
+
+function lookupEngine(){
+
+  eng = getQueryVariable("engine");
+  
+  lookup = {    //Lookup chart of all search engines
+    'google': Google,
+    'reddit': Reddit,
+    'facebook': Facebook,
+    'youtube': Youtube,
+    
+  
+  }
+
+  return lookup[eng];
+
+  //DEBUG
+  console.log("HASH: " + hash.name);
+  //DEBUG
+
+}
+
+
+  initialize();
 
