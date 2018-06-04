@@ -87,6 +87,8 @@
     }else if(currEng == Reddit){
       setEngine(Youtube);
     }else if(currEng == Youtube){
+      setEngine(Twitch);
+    }else if(currEng == Twitch){
       setEngine(Google);
 
     }
@@ -143,11 +145,14 @@ function lookupEngine(){
 
   eng = getQueryVariable("engine");
   
+
+  //TODO: This is probably not the best way to do this
   lookup = {    //Lookup chart of all search engines
     'google': Google,
     'reddit': Reddit,
     'facebook': Facebook,
     'youtube': Youtube,
+    'twitch': Twitch,
     
   
   }
