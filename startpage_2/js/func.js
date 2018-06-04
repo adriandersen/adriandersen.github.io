@@ -21,7 +21,7 @@
     //form.action = currEng.url;
     console.log(form.action);
     input.placeholder = currEng.ph;  
-    window.location.replace = "?engine=" + currEng.name;
+    //window.location. = "?engine=" + currEng.name;
     input.name = currEng.query;
     form.method = currEng.method;
     
@@ -43,7 +43,7 @@
     if(getQueryVariable("engine")){
     var tempObj = lookupEngine();
     
-    if(getQueryVariable("darkmode")){
+    if(getQueryVariable("darkmode") == "true"){
       darkMode(true);
     }else{
       darkMode(false);
