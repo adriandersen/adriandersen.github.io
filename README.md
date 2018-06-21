@@ -6,7 +6,7 @@ Most Web browsers allow setting a homepage in the settings. There, you would jus
 https://adriandersen.github.io/startpage_2/?darkmode=true&engine=reddit
 <br>_Notice the darkmode=true and engine=reddit at the end._
 
-If you want to also set the new-tab page, you might need to download an addon like 'New Tab Redirect' for Chrome or 'Custom New Tab' for Firefox
+If you want to also set the new-tab page, you might need to download an addon like **'New Tab Redirect' for Chrome** or **'Custom New Tab' for Firefox**
 ## TODO:
 
 **Will do**
