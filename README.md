@@ -1,8 +1,12 @@
 # adriandersen.github.io
 
 Just a personal startpage, might make it easier for others to customize later, but i'll have to make it work for myself first
+## How to use this as your startpage
+Most Web browsers allow setting a homepage in the settings. There, you would just insert the URL of your choice, for example
+https://adriandersen.github.io/startpage_2/?darkmode=true&engine=reddit
+<br>_Notice the darkmode=true and engine=reddit at the end._
 
-
+If you want to also set the new-tab page, you might need to download an addon like 'New Tab Redirect' for Chrome or 'Custom New Tab' for Firefox
 ## TODO:
 
 **Will do**
