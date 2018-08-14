@@ -74,3 +74,17 @@ var Facebook = {
     method:"post",
     color:"#555" //Not used yet
 };
+
+var Github = {
+    links: [ 
+        link1 = {name:"adriandersen",url:"https://github.com/adriandersen"}, 
+        link2 = {name:"github",url:"https://github.com/"},  
+    ],
+    icon:"fa-github",
+    url:"https://github.com//search",
+    query:"?q=",
+    ph:"Github Search",
+    name:"github",
+    method:"post",
+    color:"#555" //Not used yet
+};
