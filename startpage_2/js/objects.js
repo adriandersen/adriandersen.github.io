@@ -82,7 +82,7 @@ objects = [
             link1 = {name:"adriandersen",url:"https://github.com/adriandersen"}, 
             link2 = {name:"github",url:"https://github.com/"},  
         ],
-        icon:"fa-github",
+        icon:"fa-github-alt",
         url:"https://github.com//search",
         query:"?q=",
         ph:"Github Search",
