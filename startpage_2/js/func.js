@@ -78,22 +78,18 @@
   }
 
   //Button-function
+
+  var j = 0;
   function nextSearchEngine() {
-    // THIS HAS TO BE CLEANED UP
-    // WHAT A HORRIBLE WAY TO DO THIS
 
-    if(currEng == Facebook){
-      setEngine(Reddit);
-    }else if(currEng == Reddit){
-      setEngine(Youtube);
-    }else if(currEng == Youtube){
-      setEngine(Twitch);
-    }else if(currEng == Twitch){
-      setEngine(Google);
-
-    }else if(currEng == Google){
-      setEngine(Facebook);
-
+    //Sets engine to the next object in objects.js
+    if(j<(objects.length)-1){
+      setEngine(objects[++j]);
+      console.log(objects.length);
+      console.log(j);
+    }else{
+      j=0;
+      setEngine(objects[j]);
     }
   }
 	function darkMode(mode) {
