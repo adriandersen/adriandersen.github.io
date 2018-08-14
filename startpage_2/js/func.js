@@ -82,7 +82,7 @@
     // THIS HAS TO BE CLEANED UP
     // WHAT A HORRIBLE WAY TO DO THIS
 
-    if(currEng == Google){
+    if(currEng == Facebook){
       setEngine(Reddit);
     }else if(currEng == Reddit){
       setEngine(Youtube);
@@ -90,6 +90,9 @@
       setEngine(Twitch);
     }else if(currEng == Twitch){
       setEngine(Google);
+
+    }else if(currEng == Google){
+      setEngine(Facebook);
 
     }
   }
