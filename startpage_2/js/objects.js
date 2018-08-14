@@ -63,10 +63,10 @@ var Twitch = {
 
 var Facebook = {
     links: [ 
-        link1 = {name:"BITSEC",url:"https://www.google.com/drive/"}, 
-        link2 = {name:"Frontpage",url:"https://www.google.no/maps"},  
+        link1 = {name:"BITSEC",url:"https://www.facebook.com/"}, 
+        link2 = {name:"Frontpage",url:"https://www.facebook.com/"},  
     ],
-    icon:"fa-reddit",
+    icon:"fa-facebook",
     url:"https://facebook.com/search?",
     query:"q",
     ph:"Facebook Search",
