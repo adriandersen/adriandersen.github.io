@@ -79,9 +79,9 @@
 
   //Button-function
 
-  var j = 0;
+  
   function nextSearchEngine() {
-
+    var j = 0;
     //Sets engine to the next object in objects.js
     if(j<(objects.length)-1){
       setEngine(objects[++j]);
@@ -144,18 +144,25 @@ function lookupEngine(){
 
   eng = getQueryVariable("engine");
   
-
+  
   //TODO: This is probably not the best way to do this
   lookup = {    //Lookup chart of all search engines
+    /*
     'google': Google,
     'reddit': Reddit,
     'facebook': Facebook,
     'youtube': Youtube,
-    'twitch': Twitch,
+    'twitch': Twitch*/
+
+
+    
     //Let's make this just loop through all the objects[i].name
+    
   
   }
-
+  for(var i=0;i<objects.length;i++){
+    lookup[objects[i].name] = objects[i];
+  }
   return lookup[eng];
 
   //DEBUG
