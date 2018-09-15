@@ -91,20 +91,7 @@ objects = [
         color:"#555" //Not used yet
     },
     
-    Netflix = {
-        links: [ 
-            link1 = {name:"Netflix",url:"http://www.netflix.com/browse"}, 
-            link2 = {name:"Movies",url:"https://www.netflix.com/browse/genre/34399"},  
-            link3 = {name:"Series",url:"https://www.netflix.com/browse/genre/83"}, 
-        ],
-        icon:"fa-netflix",
-        url:"https://github.com//search",
-        query:"?q=",
-        ph:"Netflix Search",
-        name:"netflix",
-        method:"post",
-        color:"#555" //Not used yet
-    },
+    
 
 
 ];
