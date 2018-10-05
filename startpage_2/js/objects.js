@@ -14,6 +14,22 @@ objects = [
         color:"#555" //Not used yet
     },
 
+    Skole = {
+        links: [ 
+            link1 = {name:"Innsida",url:"https://innsida.ntnu.no/start"}, 
+            link2 = {name:"Timeplan",url:"https://innsida.ntnu.no/user/adriande/student/timeplan"},  
+
+
+        ],
+        icon:"fa-book",
+        url:"https://google.com/search",
+        query:"?q=ntnu ",
+        ph:"ntnu *",
+        name:"Skole",
+        method:"post",
+        color:"#555" //Not used yet
+    },
+        
     Reddit = {
         links: [ 
             link1 = {name:"MK",url:"https://reddit.com/r/mechanicalkeyboards"}, 
@@ -65,8 +81,8 @@ objects = [
 
     Facebook = {
         links: [ 
-            link1 = {name:"BITSEC",url:"https://www.facebook.com/"}, 
-            link2 = {name:"Frontpage",url:"https://www.facebook.com/"},  
+            link1 = {name:"Frontpage",url:"https://www.facebook.com/"}, 
+            link2 = {name:"Messenger",url:"https://www.messenger.com/"},  
         ],
         icon:"fa-facebook",
         url:"https://facebook.com/search?",
