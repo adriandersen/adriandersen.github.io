@@ -21,7 +21,7 @@ objects = [
 
 
         ],
-        icon:"fa-book",
+        icon:"fas fa-book",
         url:"https://google.com/search",
         query:"?q=ntnu ",
         ph:"ntnu *",
