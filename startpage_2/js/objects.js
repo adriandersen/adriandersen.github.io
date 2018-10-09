@@ -21,11 +21,11 @@ objects = [
 
 
         ],
-        icon:"fas fa-book",
+        icon:"fa-microsoft",
         url:"https://google.com/search",
         query:"?q=ntnu ",
-        ph:"ntnu *",
-        name:"Skole",
+        ph:"ntnu>",
+        name:"skole",
         method:"post",
         color:"#555" //Not used yet
     },
