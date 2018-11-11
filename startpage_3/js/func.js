@@ -5,7 +5,9 @@ var logo =  document.querySelector("i").classList;
 var input = document.querySelector("input");
 var form = document.querySelector("form");
 var curr = 0;
+lookup = {
 
+}
 //Changes all required things when changing search-engine
 function setEngine(obj) {
   oldEng = currEng;
@@ -38,7 +40,9 @@ function setEngine(obj) {
     }
   }
 }
+function getObjectWithName(){
 
+}
 //Runs when form is submitted
 function doSearch(){
   window.location = (currEng.url+currEng.query+input.value);
@@ -47,23 +51,26 @@ function doSearch(){
 
 
 function initialize(){
-  if(getQueryVariable("engine")){
-  var tempObj = lookupEngine();
+  lookupEngine();
+  for(var i = 0; i<objects.length; i++){
+
+    document.getElementById("icons").innerHTML += '<a id="enginebtn'+ i +'" class="btn" onclick="setEngine(lookup[\''+ objects[i].name + '\'])"' + '>' + objects[i].name + '</a>';
+    document.getElementById("enginebtn" + i).style.color = objects[i].color;
+    document.getElementById("enginebtn" + i).style.backgroundColor = objects[i].bgcolor;
+
+  }
+
+
+    
+
 
   if(getQueryVariable("darkmode") == "true"){
     darkMode(true);
   }else{
     darkMode(false);
   }
-  setEngine(tempObj);
 
-  //DEBUG
-  console.log("ENGINE SET: " + tempObj.name);
-  //DEBUG
 
-  }else{
-    setEngine(defaultEng);
-  }
     
 
 }
@@ -161,9 +168,7 @@ function lookupEngine(){
 
   eng = getQueryVariable("engine");
   
-  lookup = {
-
-  }
+  
 
   for(var i=0;i<objects.length;i++){
     lookup[objects[i].name] = objects[i];   

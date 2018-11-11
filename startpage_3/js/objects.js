@@ -5,13 +5,15 @@ objects = [
         link1 = {name:"Drive",url:"https://www.google.com/drive/"}, 
         link2 = {name:"Maps",url:"https://www.google.no/maps"},  
         ],
+        letter:"Go",
         icon:"fa-google",
         url:"https://google.com/search",
         query:"?q=",
         ph:"Google Search",
         name:"google",
         method:"post",
-        color:"#555" //Not used yet
+        bgcolor:"#eee",
+        color:"#4285f4" //Not used yet
     },
 
     Skole = {
@@ -21,13 +23,15 @@ objects = [
 
 
         ],
+        letter:"Sk",
         icon:"fa-microsoft",
         url:"https://google.com/search",
         query:"?q=ntnu ",
         ph:"ntnu>",
         name:"skole",
         method:"post",
-        color:"#555" //Not used yet
+        bgcolor:"",
+        color:"#AAE" //Not used yet
     },
         
     Reddit = {
@@ -43,26 +47,30 @@ objects = [
 
 
         ],
+        letter:"Re",
         icon:"fa-reddit",
         url:"https://reddit.com/r/",
         query:"",
         ph:"r/",
         name:"reddit",
         method:"post",
-        color:"#555" //Not used yet
+        bgcolor:"#cee3f8",
+        color:"#ff4500" //Not used yet
     },
 
     Youtube = {
         links: [ 
             link1 = {name:"Subscriptions",url:"https://www.youtube.com/feed/subscriptions"}, 
         ],
+        letter:"Yt",
         icon:"fa-youtube",
         url:"https://www.youtube.com/results",
         query:"?search_query=",
         ph:"Youtube Search",
         name:"youtube",
         method:"post",
-        color:"#555" //Not used yet
+        bgcolor:"#282828",
+        color:"#FF0000" //Not used yet
     },
 
     Twitch = {
@@ -70,13 +78,15 @@ objects = [
             link1 = {name:"Frontpage",url:"https://www.twitch.tv/"}, 
             link2 = {name:"Following",url:"https://www.twitch.tv/directory/following"}, 
         ],
+        letter:"Tw",
         icon:"fa-twitch",
         url:"https://www.twitch.tv/",
         query:"",
         ph:"Channel",
         name:"twitch",
         method:"post",
-        color:"#555" //Not used yet
+        bgcolor:"#6441a5",
+        color:"#b9a3e3" //Not used yet
     },
 
     Facebook = {
@@ -84,13 +94,15 @@ objects = [
             link1 = {name:"Frontpage",url:"https://www.facebook.com/"}, 
             link2 = {name:"Messenger",url:"https://www.messenger.com/"},  
         ],
+        letter:"Fa",
         icon:"fa-facebook",
         url:"https://facebook.com/search?",
         query:"q",
         ph:"Facebook Search",
         name:"facebook",
         method:"post",
-        color:"#555" //Not used yet
+        bgcolor:"#3b5998",
+        color:"#FFF" //Not used yet
     },
 
     Github = {
@@ -98,13 +110,15 @@ objects = [
             link1 = {name:"adriandersen",url:"https://github.com/adriandersen"}, 
             link2 = {name:"github",url:"https://github.com/"},  
         ],
+        letter:"Gh",
         icon:"fa-github-alt",
         url:"https://github.com//search",
         query:"?q=",
         ph:"Github Search",
         name:"github",
         method:"post",
-        color:"#555" //Not used yet
+        bgcolor:"#333",
+        color:"#AAA" //Not used yet
     },
     
     

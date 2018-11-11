@@ -46,7 +46,19 @@ h1 {
   font-family: "Ubuntu", sans-serif;
 }
 
+.logo{
+  background-color: transparent;
+  font-family: "Ubuntu";
+  text-decoration: none;
+  border-width: 0px 0px 3px 0px;
+  border-style: solid;
+  margin-right: 0px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
 .btn {
+  cursor: pointer;
   background-color: transparent;
   font-family: "Ubuntu";
   text-decoration: none;
@@ -103,5 +115,7 @@ input.search {
   border-color: #eee;
   margin-bottom: 5%;
 }
-
+div#icons{
+  margin-bottom: 100px;
+}
 /*# sourceMappingURL=style.css.map */
