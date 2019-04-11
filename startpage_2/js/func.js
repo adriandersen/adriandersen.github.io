@@ -103,7 +103,7 @@ function enterInputForceClick(event) {
 }
 function enterInputForceChange(event){
   console.log(event);
-  if(event.changedTouches[0].force > 0.5){
+  if(event.changedTouches[0].force > 1){
     toggleDarkMode();
   }
 
