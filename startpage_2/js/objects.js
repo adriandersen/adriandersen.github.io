@@ -17,14 +17,15 @@ objects = [
     Skole = {
         links: [ 
             link1 = {name:"Innsida",url:"https://innsida.ntnu.no/start"}, 
-            link2 = {name:"Timeplan",url:"https://innsida.ntnu.no/user/adriande/student/timeplan"},  
+            link2 = {name:"Timeplan",url:"https://innsida.ntnu.no/user/adriande/student/timeplan"},
+            link2 = {name:"Outlook",url:"https://outlook.office.com/owa/?realm=ntnu.no"},  
 
 
         ],
         icon:"fa-microsoft",
         url:"https://google.com/search",
         query:"?q=ntnu ",
-        ph:"ntnu>",
+        ph:"NTNU",
         name:"skole",
         method:"post",
         color:"#555" //Not used yet
