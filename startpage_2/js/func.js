@@ -9,6 +9,8 @@ var curr = 0;
 
 
 var InputElement = document.getElementById("input");
+InputElement.addEventListener("touchforcechange", enterInputForceChange, false);
+var InputElement = document.getElementById("input");
 InputElement.addEventListener("webkitmouseforcedown", enterInputForceClick, false);
 var LogoElement = document.getElementById("logo");
 LogoElement.addEventListener("mousedown", nextSearchEngine, false);
@@ -98,6 +100,13 @@ function enterInputForceClick(event) {
   if (event.shiftKey) {
     console.log("shift");
   }
+}
+function enterInputForceChange(event){
+  console.log(event);
+  if(event.changedTouches[0].force > 0.5){
+    toggleDarkMode();
+  }
+
 }
 
 function enterLogoForceClick(event) {
