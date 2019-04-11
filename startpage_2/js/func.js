@@ -103,9 +103,15 @@ function enterInputForceClick(event) {
 }
 function enterInputForceChange(event){
   console.log(event);
+  var changed = false;
   if(event.changedTouches[0].force >= 1){
+    changed = true;
+    toggleDarkMode();
 
     
+  }
+  if(event.changedTouches[0].force == 0){
+    changed = false;
   }
 
 }
