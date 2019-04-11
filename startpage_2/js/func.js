@@ -101,12 +101,14 @@ function enterInputForceClick(event) {
     console.log("shift");
   }
 }
+//iPhone 3D Touch
 function enterInputForceChange(event){
   console.log(event);
   var changed = false;
-  if(changed == false && event.changedTouches[0].force >= 0.5){
-    changed = true;
+  if(changed == false && event.changedTouches[0].force >= 1){
     toggleDarkMode();
+    changed = true;
+    
 
     
   }
