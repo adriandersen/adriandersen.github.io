@@ -1,0 +1,40 @@
+$light-color1: #fff;
+$light-color2: #f6f6f6;
+$light-color3: #eee;
+$light-color4: #555;
+$light-color5: #333;
+
+textarea:focus, input:focus{
+    outline: none;
+}
+body {
+    
+    background-color: #242424;
+    height:100%;
+    //width:100%;
+    margin:0;
+    
+    display: block;
+   
+    .container{
+        text-align: center;
+    }
+    
+    input{
+        
+        display: inline-block;
+        
+        margin-top: 20%;
+        padding: 20px;
+        
+        width: 60%;
+        height: 30px;
+        border-style: none;
+
+        
+          
+   
+        color: #fff;
+    }
+
+}
