@@ -139,7 +139,7 @@ function nextSearchEngine(event) {
     
   */
 
-
+  
   if (event.shiftKey) {
     if (curr < objects.length) {
       if (curr > 0) {
