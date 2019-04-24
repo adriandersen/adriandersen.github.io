@@ -95,11 +95,19 @@ function howTo() {
 
 //Force Touch
 function enterInputForceClick(event) {
+  
   toggleDarkMode();
+  document.getElementById(event.target.id).classList.remove("shake");
+
   console.log(event);
   if (event.shiftKey) {
     console.log("shift");
+    
   }
+  document.getElementById(event.target.id).classList.add("shake");
+  
+
+  
 }
 //iPhone 3D Touch
 function enterInputForceChange(event){
@@ -132,7 +140,7 @@ function nextSearchEngine(event) {
   */
 
 
-  /*if (event.shiftKey) {
+  if (event.shiftKey) {
     if (curr < objects.length) {
       if (curr > 0) {
         setEngine(objects[--curr]);
@@ -146,7 +154,7 @@ function nextSearchEngine(event) {
       console.log("critical error")
     }
 
-  } else */{
+  } else {
     //Sets engine to the next object in objects.js
     if (curr < objects.length) {
       if (curr < (objects.length) - 1) {
