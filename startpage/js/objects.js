@@ -8,6 +8,16 @@ let obj = [
                 name:"Drive",
                 url:"https://drive.google.com/drive/u/0/my-drive",
                 short:"d"
+            },
+            Maps = {
+                name:"Maps",
+                url:"https://drive.google.com/drive/u/0/my-drive",
+                short:"m"
+            },
+            Search = {
+                name:"Search",
+                url:"https://drive.google.com/drive/u/0/my-drive",
+                short:"s"
             }
         ]
     },
@@ -19,8 +29,23 @@ let obj = [
         links: [
             Norge = {
                 name:"Norge",
-                url:"reddit.com/r/norge",
+                url:"https://www.reddit.com/r/norge/",
                 short:"n"
+            },
+            MK = {
+                name:"MK",
+                url:"https://www.reddit.com/r/all/",
+                short:"m"
+            },
+            Frontpage = {
+                name:"Frontpage",
+                url:"https://www.reddit.com/",
+                short:"f"
+            },
+            All = {
+                name:"All",
+                url:"https://www.reddit.com/r/all/",
+                short:"a"
             }
         ]
     },
