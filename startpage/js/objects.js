@@ -33,8 +33,8 @@ let obj = [
                 short:"n"
             },
             MK = {
-                name:"MK",
-                url:"https://www.reddit.com/r/all/",
+                name:"MK", 
+                url:"https://www.reddit.com/r/mechanicalkeyboards/",
                 short:"m"
             },
             Frontpage = {
@@ -52,6 +52,7 @@ let obj = [
     Netflix = {
         name:"Netflix",
         short:"n",
+        url:"https://netflix.com",
         
     }
 ]
