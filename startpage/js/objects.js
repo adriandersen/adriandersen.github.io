@@ -54,5 +54,11 @@ let obj = [
         short:"n",
         url:"https://netflix.com",
         
+    },
+    YouTube = {
+        name:"Youtube",
+        short:"y",
+        url:"https://youtube.com",
+        
     }
 ]
