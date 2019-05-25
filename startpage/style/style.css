@@ -20,5 +20,8 @@ body input {
   border-style: none;
   color: #fff;
 }
+body p {
+  background-color: #555;
+}
 
 /*# sourceMappingURL=style.css.map */
