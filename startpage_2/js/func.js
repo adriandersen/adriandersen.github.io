@@ -14,6 +14,8 @@ var InputElement = document.getElementById("input");
 InputElement.addEventListener("webkitmouseforcedown", enterInputForceClick, false);
 var LogoElement = document.getElementById("logo");
 LogoElement.addEventListener("mousedown", nextSearchEngine, false);
+InputElement.addEventListener("webkitmouseforcechanged", forceChanged, false);
+
 
 //Changes all required things when changing search-engine
 function setEngine(obj) {
@@ -98,16 +100,21 @@ function enterInputForceClick(event) {
   
   toggleDarkMode();
   document.getElementById(event.target.id).classList.remove("shake");
-
+  document.getElementById(event.target.id).innerText("TEKST");
   console.log(event);
+
   if (event.shiftKey) {
     console.log("shift");
     
   }
   document.getElementById(event.target.id).classList.add("shake");
+
   
 
   
+}
+function forceChanged(event){
+  console.log(event);
 }
 //iPhone 3D Touch
 function enterInputForceChange(event){
