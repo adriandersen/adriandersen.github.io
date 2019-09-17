@@ -10,18 +10,18 @@ body {
   background-attachment: fixed;
 }
 body i {
-  color: #333;
+  color: #393946;
 }
 body .btn {
   color: #000;
-  border-color: #333;
+  border-color: #393946;
 }
 body input {
-  color: #333;
+  color: #393946;
 }
 
 body.dark {
-  background-color: #333;
+  background-color: #2d2d32;
   height: 100%;
   margin: 0;
   background-repeat: no-repeat;
