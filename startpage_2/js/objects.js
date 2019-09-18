@@ -11,7 +11,7 @@ objects = [
         ph:"Google Search",
         name:"google",
         method:"post",
-        color:"#555" //Not used yet
+        color:"#F4B400"
     },
 
     Skole = {
@@ -28,7 +28,7 @@ objects = [
         ph:"NTNU",
         name:"skole",
         method:"post",
-        color:"#00509e" //Not used yet
+        color:"#00509e"
     },
         
     Reddit = {
@@ -50,7 +50,7 @@ objects = [
         ph:"r/",
         name:"reddit",
         method:"post",
-        color:"#FF4301" //Not used yet
+        color:"#FF4301"
     },
 
     Youtube = {
@@ -63,7 +63,7 @@ objects = [
         ph:"Youtube Search",
         name:"youtube",
         method:"post",
-        color:"#555" //Not used yet
+        color:"#FF0000"
     },
 
     Twitch = {
@@ -77,7 +77,7 @@ objects = [
         ph:"Channel",
         name:"twitch",
         method:"post",
-        color:"#555" //Not used yet
+        color:"#6441A4"
     },
 
     Facebook = {
@@ -91,7 +91,7 @@ objects = [
         ph:"Facebook Search",
         name:"facebook",
         method:"post",
-        color:"#555" //Not used yet
+        color:"#3C5A99"
     },
 
     Github = {
@@ -105,7 +105,7 @@ objects = [
         ph:"Github Search",
         name:"github",
         method:"post",
-        color:"#555" //Not used yet
+        color:"#555"
     },
     
     
