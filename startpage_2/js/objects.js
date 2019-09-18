@@ -2,8 +2,8 @@ objects = [
 
     Google = {
         links: [ 
-        link1 = {name:"Drive",url:"https://www.google.com/drive/"}, 
-        link2 = {name:"Maps",url:"https://www.google.no/maps"},  
+            link1 = {name:"Drive", url:"https://www.google.com/drive/"}, 
+            link2 = {name:"Maps", url:"https://www.google.no/maps"},  
         ],
         icon:"fa-google",
         url:"https://google.com/search",
@@ -16,9 +16,9 @@ objects = [
 
     Skole = {
         links: [ 
-            link1 = {name:"Innsida",url:"https://innsida.ntnu.no/start"}, 
-            link2 = {name:"Timeplan",url:"https://innsida.ntnu.no/user/adriande/student/timeplan"},
-            link2 = {name:"Outlook",url:"https://outlook.office.com/owa/?realm=ntnu.no"},  
+            link1 = {name:"Innsida", url:"https://innsida.ntnu.no/start"}, 
+            link2 = {name:"Timeplan", url:"https://innsida.ntnu.no/user/adriande/student/timeplan"},
+            link2 = {name:"Outlook", url:"https://outlook.office.com/owa/?realm=ntnu.no"},  
 
 
         ],
@@ -28,16 +28,16 @@ objects = [
         ph:"NTNU",
         name:"skole",
         method:"post",
-        color:"#555" //Not used yet
+        color:"#00509e" //Not used yet
     },
         
     Reddit = {
         links: [ 
-            link1 = {name:"MK",url:"https://reddit.com/r/mechanicalkeyboards"}, 
-            link2 = {name:"Norge",url:"https://reddit.com/r/norge"},  
-            link3 = {name:"Frontpage",url:"https://reddit.com"}, 
-            link4 = {name:"Startpages",url:"https://www.reddit.com/r/startpages"},
-            link4 = {name:"Unixporn",url:"https://www.reddit.com/r/unixporn"},  
+            link1 = {name:"MK", url:"https://reddit.com/r/mechanicalkeyboards"}, 
+            link2 = {name:"Norge", url:"https://reddit.com/r/norge"},  
+            link3 = {name:"Frontpage", url:"https://reddit.com"}, 
+            link4 = {name:"Startpages", url:"https://www.reddit.com/r/startpages"},
+            link5 = {name:"ProgrammerHumor", url:"https://www.reddit.com/r/programmerhumor"},  
 
             
 
@@ -50,12 +50,12 @@ objects = [
         ph:"r/",
         name:"reddit",
         method:"post",
-        color:"#555" //Not used yet
+        color:"#FF4301" //Not used yet
     },
 
     Youtube = {
         links: [ 
-            link1 = {name:"Subscriptions",url:"https://www.youtube.com/feed/subscriptions"}, 
+            link1 = {name:"Subscriptions", url:"https://www.youtube.com/feed/subscriptions"}, 
         ],
         icon:"fa-youtube",
         url:"https://www.youtube.com/results",
@@ -68,8 +68,8 @@ objects = [
 
     Twitch = {
         links: [ 
-            link1 = {name:"Frontpage",url:"https://www.twitch.tv/"}, 
-            link2 = {name:"Following",url:"https://www.twitch.tv/directory/following"}, 
+            link1 = {name:"Frontpage", url:"https://www.twitch.tv/"}, 
+            link2 = {name:"Following", url:"https://www.twitch.tv/directory/following"}, 
         ],
         icon:"fa-twitch",
         url:"https://www.twitch.tv/",
@@ -82,8 +82,8 @@ objects = [
 
     Facebook = {
         links: [ 
-            link1 = {name:"Frontpage",url:"https://www.facebook.com/"}, 
-            link2 = {name:"Messenger",url:"https://www.messenger.com/"},  
+            link1 = {name:"Frontpage", url:"https://www.facebook.com/"}, 
+            link2 = {name:"Messenger", url:"https://www.messenger.com/"},  
         ],
         icon:"fa-facebook",
         url:"https://facebook.com/search?",
@@ -96,8 +96,8 @@ objects = [
 
     Github = {
         links: [ 
-            link1 = {name:"adriandersen",url:"https://github.com/adriandersen"}, 
-            link2 = {name:"github",url:"https://github.com/"},  
+            link1 = {name:"adriandersen", url:"https://github.com/adriandersen"}, 
+            link2 = {name:"github", url:"https://github.com/"},  
         ],
         icon:"fa-github-alt",
         url:"https://github.com//search",

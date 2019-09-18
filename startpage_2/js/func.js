@@ -38,6 +38,8 @@ function setEngine(obj) {
 
   logo.remove(oldEng.icon);
   logo.add(currEng.icon);
+  LogoElement.style.color = currEng.color;
+  
   //DEBUG
   console.log("OBJ SET: " + oldEng.name + " -> " + currEng.name + " ~~ " + i + "/" + currEng.links.length + " buttons added.");
   //DEBUG
