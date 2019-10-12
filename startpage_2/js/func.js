@@ -14,8 +14,7 @@ var InputElement = document.getElementById("input");
 InputElement.addEventListener("webkitmouseforcedown", enterInputForceClick, false);
 var LogoElement = document.getElementById("logo");
 LogoElement.addEventListener("mousedown", nextSearchEngine, false);
-InputElement.addEventListener("webkitmouseforcechanged", forceChanged, false);
-
+LogoElement.addEventListener("webkitmouseforcedown", enterLogoForceClick, false);
 
 //Changes all required things when changing search-engine
 function setEngine(obj) {
@@ -39,7 +38,7 @@ function setEngine(obj) {
   logo.remove(oldEng.icon);
   logo.add(currEng.icon);
   LogoElement.style.color = currEng.color;
-  
+
   //DEBUG
   console.log("OBJ SET: " + oldEng.name + " -> " + currEng.name + " ~~ " + i + "/" + currEng.links.length + " buttons added.");
   //DEBUG
@@ -99,45 +98,51 @@ function howTo() {
 
 //Force Touch
 function enterInputForceClick(event) {
-  
+  if (document.getElementById(event.target.id).classList.contains("shake")) {
+    document.getElementById(event.target.id).classList.remove("shake");
+  }
+
   toggleDarkMode();
-  document.getElementById(event.target.id).classList.remove("shake");
-  document.getElementById(event.target.id).innerText("TEKST");
   console.log(event);
 
   if (event.shiftKey) {
     console.log("shift");
-    
+
   }
-  document.getElementById(event.target.id).classList.add("shake");
+  if (!document.getElementById(event.target.id).classList.contains("shake")) {
+    document.getElementById(event.target.id).classList.add("shake");
+  }
 
-  
 
-  
+
+
+
+
 }
-function forceChanged(event){
-  console.log(event);
-}
+
 //iPhone 3D Touch
-function enterInputForceChange(event){
+function enterInputForceChange(event) {
   console.log(event);
   var changed = false;
-  if(changed == false && event.changedTouches[0].force >= 1){
+  if (changed == false && event.changedTouches[0].force >= 1) {
     toggleDarkMode();
     changed = true;
-    
 
-    
+
+
   }
-  if(event.changedTouches[0].force == 0){
+  if (event.changedTouches[0].force == 0) {
     changed = false;
   }
 
 }
 
 function enterLogoForceClick(event) {
+  LogoElement.classList.remove("shake");
+
   nextSearchEngine();
-  console.log(event);
+  LogoElement.classList.add("shake");
+  //console.log(event);
 
 
 }
@@ -148,7 +153,7 @@ function nextSearchEngine(event) {
     
   */
 
-  
+  if(event){
   if (event.shiftKey) {
     if (curr < objects.length) {
       if (curr > 0) {
@@ -178,6 +183,7 @@ function nextSearchEngine(event) {
       console.log("critical error")
     }
   }
+}
 }
 function darkMode(mode) {
 

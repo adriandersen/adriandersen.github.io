@@ -11,7 +11,7 @@ objects = [
         ph:"Google Search",
         name:"google",
         method:"post",
-        color:"#F4B400"
+        color:"#BBBBBB"
     },
 
     Skole = {
@@ -24,7 +24,7 @@ objects = [
         ],
         icon:"fa-microsoft",
         url:"https://google.com/search",
-        query:"?q=ntnu ",
+        query:"?q=site:ntnu.no ",
         ph:"NTNU",
         name:"skole",
         method:"post",
@@ -66,18 +66,17 @@ objects = [
         color:"#FF0000"
     },
 
-    Twitch = {
+    Twitter = {
         links: [ 
-            link1 = {name:"Frontpage", url:"https://www.twitch.tv/"}, 
-            link2 = {name:"Following", url:"https://www.twitch.tv/directory/following"}, 
+            link1 = {name:"Frontpage", url:"https://www.twitter.com"}, 
         ],
-        icon:"fa-twitch",
-        url:"https://www.twitch.tv/",
-        query:"",
-        ph:"Channel",
-        name:"twitch",
+        icon:"fa-twitter",
+        url:"https://www.twitter.com/",
+        query:"search?q=",
+        ph:"Twitter Search",
+        name:"twitter",
         method:"post",
-        color:"#6441A4"
+        color:"#1DA1F2"
     },
 
     Facebook = {
