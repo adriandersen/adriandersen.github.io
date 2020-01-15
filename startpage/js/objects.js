@@ -1,64 +1,113 @@
-let obj = [
-    Google = {
-        name:"Google",
-        url:"google.com",
-        short:"g",
-        links: [
-            Drive = {
-                name:"Drive",
-                url:"https://drive.google.com/drive/u/0/my-drive",
-                short:"d"
-            },
-            Maps = {
-                name:"Maps",
-                url:"https://drive.google.com/drive/u/0/my-drive",
-                short:"m"
-            },
-            Search = {
-                name:"Search",
-                url:"https://drive.google.com/drive/u/0/my-drive",
-                short:"s"
-            }
-        ]
-    },
-    Reddit = {
-        name:"Reddit",
-        url:"reddit.com",
-        short:"r",
+objects = [
 
-        links: [
-            Norge = {
-                name:"Norge",
-                url:"https://www.reddit.com/r/norge/",
-                short:"n"
-            },
-            MK = {
-                name:"MK", 
-                url:"https://www.reddit.com/r/mechanicalkeyboards/",
-                short:"m"
-            },
-            Frontpage = {
-                name:"Frontpage",
-                url:"https://www.reddit.com/",
-                short:"f"
-            },
-            All = {
-                name:"All",
-                url:"https://www.reddit.com/r/all/",
-                short:"a"
-            }
-        ]
+    Google = {
+        links: [ 
+            link1 = {name:"Drive", url:"https://www.google.com/drive/"}, 
+            link2 = {name:"Maps", url:"https://www.google.no/maps"},  
+        ],
+        icon:"fa-google",
+        url:"https://google.com/search",
+        query:"?q=",
+        ph:"Google Search",
+        name:"google",
+        method:"post",
+        color:"#BBBBBB"
     },
-    Netflix = {
-        name:"Netflix",
-        short:"n",
-        url:"https://netflix.com",
-        
+
+    Skole = {
+        links: [ 
+            link1 = {name:"Innsida", url:"https://innsida.ntnu.no/start"}, 
+            link2 = {name:"Timeplan", url:"https://innsida.ntnu.no/user/adriande/student/timeplan"},
+            link2 = {name:"Outlook", url:"https://outlook.office.com/owa/?realm=ntnu.no"},  
+
+
+        ],
+        icon:"fa-microsoft",
+        url:"https://google.com/search",
+        query:"?q=site:ntnu.no ",
+        ph:"NTNU",
+        name:"skole",
+        method:"post",
+        color:"#00509e"
     },
-    YouTube = {
-        name:"Youtube",
-        short:"y",
-        url:"https://youtube.com",
         
-    }
-]
+    Reddit = {
+        links: [ 
+            link1 = {name:"MK", url:"https://reddit.com/r/mechanicalkeyboards"}, 
+            link2 = {name:"Norge", url:"https://reddit.com/r/norge"},  
+            link3 = {name:"Frontpage", url:"https://reddit.com"}, 
+            link4 = {name:"Startpages", url:"https://www.reddit.com/r/startpages"},
+            link5 = {name:"ProgrammerHumor", url:"https://www.reddit.com/r/programmerhumor"},  
+
+            
+
+
+
+        ],
+        icon:"fa-reddit",
+        url:"https://reddit.com/r/",
+        query:"",
+        ph:"r/",
+        name:"reddit",
+        method:"post",
+        color:"#FF4301"
+    },
+
+    Youtube = {
+        links: [ 
+            link1 = {name:"Subscriptions", url:"https://www.youtube.com/feed/subscriptions"}, 
+        ],
+        icon:"fa-youtube",
+        url:"https://www.youtube.com/results",
+        query:"?search_query=",
+        ph:"Youtube Search",
+        name:"youtube",
+        method:"post",
+        color:"#FF0000"
+    },
+
+    Twitter = {
+        links: [ 
+            link1 = {name:"Frontpage", url:"https://www.twitter.com"}, 
+        ],
+        icon:"fa-twitter",
+        url:"https://www.twitter.com/",
+        query:"search?q=",
+        ph:"Twitter Search",
+        name:"twitter",
+        method:"post",
+        color:"#1DA1F2"
+    },
+
+    Facebook = {
+        links: [ 
+            link1 = {name:"Frontpage", url:"https://www.facebook.com/"}, 
+            link2 = {name:"Messenger", url:"https://www.messenger.com/"},  
+        ],
+        icon:"fa-facebook",
+        url:"https://facebook.com/search?",
+        query:"q",
+        ph:"Facebook Search",
+        name:"facebook",
+        method:"post",
+        color:"#3C5A99"
+    },
+
+    Github = {
+        links: [ 
+            link1 = {name:"adriandersen", url:"https://github.com/adriandersen"}, 
+            link2 = {name:"github", url:"https://github.com/"},  
+        ],
+        icon:"fa-github-alt",
+        url:"https://github.com//search",
+        query:"?q=",
+        ph:"Github Search",
+        name:"github",
+        method:"post",
+        color:"#555"
+    },
+    
+    
+
+
+];
